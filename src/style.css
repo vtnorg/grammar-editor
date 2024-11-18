@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(./fonts/Inconsolata.woff2);
+}
+:root {
+    --font: Inconsolata, Arial, Helvetica, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-highlight {
+    border-radius: 2px;
+}
+
+.text-highlight .text-highlight,
+.dark .text-highlight .text-highlight {
+    background-color: transparent;
+}
+
+#editor {
+    font-size: 20px;
+    font-family: var(--font);
+}
+
+.ql-container,.ql-editor {
+    min-height: 500px;
+}
+.ql-container.full {
+    min-height: calc(100vh - 68px - 2rem - 50px);
+}
+.ql-toolbar.ql-snow {
+    border: 0;
+    font-family: var(--font);
+}
+
+.ql-container.ql-snow {
+    border: 0;
+}
+
+.ql-snow .ql-picker {
+    color: inherit;
+}
+
+.dark .ql-snow .ql-stroke {
+    stroke: #e2e8f0;
+}
+
+.ql-editor:focus {
+    outline: none;
+}
+
+.dark .ql-snow .ql-tooltip {
+    background-color: #1f2937;
+    color: #e2e8f0;
+}
+
+.dark .ql-snow .ql-picker-options,
+.dark input {
+    background-color: #1f2937;
+}
+.ql-editor .ql-size-huge {
+    font-size: 2em;
+}
